@@ -1,18 +1,25 @@
-import { api } from '@/shared/api/axios';
-
 export const authApi = {
     login: async (email: string, password: string) => {
-        const response = await api.post('/auth/login', {
-            email,
-            password,
-        })
-        return response.data;
+        await new Promise((resolve) => setTimeout(resolve, 400));
+
+        return {
+            access_token: 'mock-access-token',
+            user: {
+                id: 'mock-user-id',
+                email,
+            },
+        };
     },
 
     me: async () => {
-    const response = await api.get('/auth/me');
+        await new Promise((resolve) => setTimeout(resolve, 200));
 
-    return response.data;
+        return {
+            user: {
+                id: 'mock-user-id',
+                email: 'demo@board.lim',
+            },
+        };
     },
     
 };

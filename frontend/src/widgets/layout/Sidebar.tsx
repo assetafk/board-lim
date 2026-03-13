@@ -2,22 +2,36 @@ import { NavLink } from 'react-router-dom';
 
 export const Sidebar = () => {
     return (
-        <aside className='w-64 bg-gray-800 text-white p-4'>
-            <h2 className='text-xl font-bold'>My App</h2>
-            <NavLink
-            to = '/'
-            className = {({ isActive }) =>
-            isActive ? 'font-bold text-blue-400' : 'text-gray-300'}
-            >
-                Dashboard
-                </NavLink>
-                <NavLink
-                to='/settings'
-                className={({ isActive }) =>
-                isActive ? 'font-bold text-blue-400' : 'text-gray-300'}
-                >
-                    Settings
+        <aside className='sidebar-blur w-64 text-slate-100 px-5 py-6 flex flex-col justify-between'>
+            <div>
+                <div className='mb-8'>
+                    <p className='text-[10px] font-semibold tracking-[0.35em] uppercase text-sky-300/80'>
+                        Board LIM
+                    </p>
+                    <h2 className='mt-2 text-xl font-semibold'>
+                        Control Panel
+                    </h2>
+                </div>
+
+                <nav className='space-y-1 text-sm'>
+                    <NavLink
+                        to='/'
+                        className={({ isActive }) =>
+                            `nav-link ${isActive ? 'nav-link-active' : ''}`
+                        }
+                    >
+                        <span>Dashboard</span>
                     </NavLink>
+                    <NavLink
+                        to='/settings'
+                        className={({ isActive }) =>
+                            `nav-link ${isActive ? 'nav-link-active' : ''}`
+                        }
+                    >
+                        <span>Settings</span>
+                    </NavLink>
+                </nav>
+            </div>
         </aside>
     );
 };
