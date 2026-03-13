@@ -1,15 +1,20 @@
-import { Sidebar } from './Sidebar';
+import { Sidebar } from './sidebar';
 import { Header } from './Header';
 
 type Props = {
-    childre: React.ReactNode;
+    children: React.ReactNode;
 };
 
-export const AppLayout = ({ childre }: Props) => {
+export const AppLayout = ({ children }: Props) => {
     return (
-        <div className='flex h -screen'>
+        <div className='flex h-screen'>
 
-            <Sidebar
+            <Sidebar />
+            <div className='flex-1 flex flex-col'>
+                <Header />
+                <main className='flex-1 p-4'>{children}
+                </main>
+            </div>
         </div>
-    )
-}
+    );
+};

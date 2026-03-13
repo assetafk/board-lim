@@ -15,5 +15,5 @@ export const Header = () => {
                 Logout
             </button>
         </header>
-    )   
-}
+    );   
+};

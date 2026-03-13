@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useAuthStore } from '@/features/auth/model/authStore';
 import { Layout } from '@/widgets/layout/Layout';
 import { ModalPortal } from '@/widgets/layout/ModalPortal';
+import { AppLayout } from '@/widgets/layout/AppLayout';
 
 export const DashboardPage = () => {
     const [modalOpen, setModalOpen] = React.useState(false);

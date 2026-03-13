@@ -1,4 +1,3 @@
-import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 export const Sidebar = () => {
@@ -21,4 +20,4 @@ export const Sidebar = () => {
                     </NavLink>
         </aside>
     );
-}
+};
