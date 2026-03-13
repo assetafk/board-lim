@@ -16,7 +16,7 @@ export const LoginForm = () => {
     };
 
     return (
-        <form onSubmit={handleSubmit} className='space-y-4'>
+        <form onSubmit={handleSubmit} className='space-y-5'>
             <div className='form-field'>
                 <label className='form-label' htmlFor='email'>
                     Email
@@ -45,9 +45,20 @@ export const LoginForm = () => {
                 />
             </div>
 
-            <button type='submit' className='btn-primary w-full mt-2'>
-                Continue
-            </button>
+            <div className='space-y-3'>
+                <button type='submit' className='btn-primary w-full mt-1'>
+                    Continue
+                </button>
+                <div className='flex items-center justify-between text-[11px] text-slate-500'>
+                    <span>Use your workspace email.</span>
+                    <button
+                        type='button'
+                        className='btn-ghost px-3 py-1'
+                    >
+                        Forgot password
+                    </button>
+                </div>
+            </div>
         </form>
     );
 };
