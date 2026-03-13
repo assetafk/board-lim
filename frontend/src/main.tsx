@@ -1,6 +1,7 @@
 import ReactDom from 'react-dom/client';
 import { RouterProvider } from 'react-router-dom';
 import { router } from '@/app/providers/router';
+import './styles.css';
 
 ReactDom.createRoot(
     document.getElementById('root')!
