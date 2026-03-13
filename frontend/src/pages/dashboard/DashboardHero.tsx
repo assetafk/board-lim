@@ -28,7 +28,7 @@ export const DashboardHero: FC<DashboardHeroProps> = ({
             className='dashboard-hero-shell space-y-8 md:space-y-0 md:flex md:items-center md:justify-between gap-10'
             onMouseMove={handleMouseMove}
         >
-            <div className='max-w-xl space-y-3'>
+            <div className='max-w-xl space-y-3 text-center md:text-left mx-auto md:mx-0'>
                 <p className='text-[11px] font-semibold tracking-[0.32em] uppercase text-slate-400 fade-in-up hero-stagger-1'>
                     Board LIM · Live boards console
                 </p>

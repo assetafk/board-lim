@@ -18,9 +18,9 @@ export const Header = () => {
     return (
         <header className='header-blur h-16 flex items-center justify-between px-6'>
             <div className='flex flex-col gap-0.5'>
-                <span className='badge-pill'>Control Surface</span>
+                <span className='badge-pill'>Board LIM · Control Surface</span>
                 <p className='text-sm text-slate-200'>
-                    Signals from every board,{user?.email ? ` ${user.email}` : ' guest'}.
+                    One calm console for your boards,{user?.email ? ` ${user.email}` : ' guest'}.
                 </p>
             </div>
             {user ? (

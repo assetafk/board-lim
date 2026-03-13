@@ -4,16 +4,16 @@ export const Sidebar = () => {
     return (
         <aside className='sidebar-blur w-64 text-slate-100 px-5 py-6 flex flex-col justify-between'>
             <div>
-                <div className='mb-8'>
+                <div className='mb-8 text-center'>
                     <p className='text-[10px] font-semibold tracking-[0.35em] uppercase text-sky-300/80'>
                         Board LIM
                     </p>
-                    <h2 className='mt-2 text-xl font-semibold'>
-                        Control Panel
+                    <h2 className='mt-2 text-2xl font-semibold tracking-tight'>
+                        Control Surface
                     </h2>
                 </div>
 
-                <nav className='space-y-1 text-sm'>
+                <nav className='space-y-1 text-sm text-center'>
                     <NavLink
                         to='/'
                         className={({ isActive }) =>
